@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ app/ [L]
+    RewriteRule (.*) app/$1 [L]
+    RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png|map|woff|ttf|woff2)$ [NC]
+</IfModule>
