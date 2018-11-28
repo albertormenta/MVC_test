@@ -1,5 +1,3 @@
 <?php
-getheader();
-getsidebar();
-getfooter();
+
 ?>
